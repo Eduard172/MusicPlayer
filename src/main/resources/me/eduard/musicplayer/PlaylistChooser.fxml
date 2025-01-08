@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="510.0" prefWidth="844.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.PlaylistChooser">
+   <children>
+      <ListView fx:id="listView" layoutX="13.0" layoutY="77.0" prefHeight="387.0" prefWidth="819.0" />
+      <Label fx:id="titleLabel" layoutX="14.0" layoutY="40.0" text="Your available playlists ([N])">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectButton" layoutX="744.0" layoutY="474.0" mnemonicParsing="false" text="Select playlist" />
+      <Button fx:id="cancelButton" layoutX="647.0" layoutY="474.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Cancel" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="14.0" layoutY="473.0" prefHeight="28.0" prefWidth="626.0" textFill="#a45a5a">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="taskBar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" stroke="BLACK" strokeType="INSIDE" width="844.0" />
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="808.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" fx:id="xImage" />
+      <ImageView fx:id="minimizeImage" fitHeight="26.0" fitWidth="32.0" layoutX="768.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="804.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" fx:id="xButton" />
+      <Button fx:id="minimizeButton" layoutX="764.0" layoutY="2.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" />
+      <Label fx:id="taskbarTitle" layoutX="12.0" layoutY="7.0" text="Window Title" />
+   </children>
+</AnchorPane>

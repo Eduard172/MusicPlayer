@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="457.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.MessageBox_Ok">
+   <children>
+      <Label fx:id="header" alignment="CENTER" layoutX="11.0" layoutY="42.0" prefHeight="31.0" prefWidth="712.0" text="HEADER">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="message" alignment="TOP_LEFT" layoutX="5.0" layoutY="89.0" prefHeight="321.0" prefWidth="725.0" text="MESSAGE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" layoutX="656.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="OK" />
+      <Button fx:id="cancelButton" layoutX="574.0" layoutY="422.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="CANCEL" />
+      <Rectangle fx:id="taskBar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" stroke="BLACK" strokeType="INSIDE" width="734.0" />
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="698.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" fx:id="xImage" />
+      <ImageView fx:id="minimizeImage" fitHeight="26.0" fitWidth="32.0" layoutX="658.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="694.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" fx:id="xButton" />
+      <Button fx:id="minimizeButton" layoutX="654.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" />
+      <Label fx:id="taskbarTitle" layoutX="4.0" layoutY="6.0" text="Window Title" />
+   </children>
+</AnchorPane>

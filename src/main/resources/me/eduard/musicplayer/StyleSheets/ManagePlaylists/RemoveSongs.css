@@ -1,0 +1,55 @@
+#corePane{
+    -fx-background-color: #171717;
+}
+#xButton, #xButton:hover{
+    -fx-background-color: transparent;
+}
+#minimizeButton, #minimizeButton:hover{
+    -fx-background-color: transparent;
+}
+#taskBar{
+    -fx-fill: #808080;
+}
+.label{
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #404541;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #5b635d;
+}
+.button:pressed{
+    -fx-background-color: #404541;
+}
+
+.list-view{
+    -fx-background-color: #56635a;
+}
+
+.list-cell:filled{
+    -fx-text-fill: #1dcc52;
+}
+.list-cell{
+    -fx-background-color: #56635a;
+}
+.list-cell:even, .list-cell:odd{
+    -fx-background-color: #56635a;
+}
+.list-cell:selected, .list-cell:focused{
+    -fx-background-color: #6e8073;
+    -fx-text-fill: #00ff4e;
+}
+
+.check-box{
+    -fx-text-fill: white;
+}
+
+.check-box:selected .box{
+    -fx-background-color: #00FF4EFF;
+}
+
+.check-box .box{
+    -fx-background-color: #6e8073;
+}

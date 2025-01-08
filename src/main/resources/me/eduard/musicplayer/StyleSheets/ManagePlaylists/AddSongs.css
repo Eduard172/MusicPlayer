@@ -1,0 +1,47 @@
+#corePane{
+    -fx-background-color: #171717;
+}
+#xButton, #xButton:hover{
+    -fx-background-color: transparent;
+}
+#minimizeButton, #minimizeButton:hover{
+    -fx-background-color: transparent;
+}
+#taskBar{
+    -fx-fill: #808080;
+}
+.label{
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #404541;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #5b635d;
+}
+.button:pressed{
+    -fx-background-color: #404541;
+}
+.text-area .content{
+    -fx-background-color: #434d46;
+}
+.text-area{
+    -fx-text-fill: white;
+}
+.menu-bar {
+    -fx-background-color: #404541;
+}
+.menu-bar .menu-button:showing{
+    -fx-background-color: #404541;
+}
+.menu-bar:hover, .menu-bar .menu-button:hover, .menu-bar:focused .label{
+    -fx-background-color: #5b635d;
+}
+.menu-item{
+    -fx-background-color: #151515;
+    -fx-text-fill: white;
+}
+.menu-item:focused{
+    -fx-background-color: #5b635d;
+}

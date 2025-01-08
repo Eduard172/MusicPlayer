@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="494.0" prefWidth="851.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.ManagePlaylists">
+   <children>
+      <Label fx:id="headerLabel" layoutX="14.0" layoutY="39.0" text="You have N created playlists. Choose what to do with them.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="11.0" layoutY="76.0" prefHeight="260.0" prefWidth="837.0" />
+      <Label fx:id="currentlySelectedLabel" layoutX="14.0" layoutY="437.0" text="Currently selected: [playlist]">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <MenuBar accessibleRole="BUTTON" layoutX="651.0" layoutY="347.0" prefHeight="25.0" prefWidth="186.0">
+        <menus>
+          <Menu fx:id="menuBar" mnemonicParsing="false" text="Choose what action to take...">
+            <items>
+              <MenuItem fx:id="addSongs" mnemonicParsing="false" text="Add Songs" />
+                  <MenuItem fx:id="removeSongs" mnemonicParsing="false" text="Remove Songs" />
+                  <MenuItem fx:id="moveSongs" mnemonicParsing="false" text="Move Songs" />
+                  <MenuItem fx:id="cleanupPlaylist" mnemonicParsing="false" text="Cleanup Playlist" />
+                  <MenuItem fx:id="playlistInfo" mnemonicParsing="false" text="See Playlist Information" />
+                  <MenuItem fx:id="deletePlaylist" mnemonicParsing="false" text="Delete Playlist..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="proceedToActionButton" layoutX="719.0" layoutY="462.0" mnemonicParsing="false" text="Proceed to action..." />
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="347.0" prefHeight="55.0" prefWidth="634.0" text="Select a playlist that you want to modify or remove. After you select the playlist, click on the right options menu to take action, then on Proceed button" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="592.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Cancel" />
+      <Label fx:id="actionLabel" layoutX="14.0" layoutY="462.0" text="Action taken: [action]">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="7.0" layoutY="404.0" prefHeight="25.0" prefWidth="844.0" textFill="#f83838">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="taskBar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="851.0" />
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="815.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" fx:id="xImage" />
+      <ImageView fx:id="minimizeImage" fitHeight="26.0" fitWidth="32.0" layoutX="775.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="811.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" fx:id="xButton" />
+      <Button fx:id="minimizeButton" layoutX="771.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" />
+      <Label fx:id="taskbarTitle" layoutX="8.0" layoutY="6.0" text="Window Title" />
+   </children>
+</AnchorPane>

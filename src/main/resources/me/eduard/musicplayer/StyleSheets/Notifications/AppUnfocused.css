@@ -1,0 +1,12 @@
+#corePane{
+    -fx-background-color: #171717;
+}
+.label{
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: transparent;
+}
+.line{
+    -fx-fill: white;
+}

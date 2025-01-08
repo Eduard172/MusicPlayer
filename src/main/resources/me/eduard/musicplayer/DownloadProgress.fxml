@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="262.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.DownloadProgress">
+   <children>
+      <Label layoutX="14.0" layoutY="38.0" text="Download in Progress...">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="15.0" layoutY="80.0" prefHeight="18.0" prefWidth="410.0" progress="0.0" />
+      <Label fx:id="overallProgress" alignment="CENTER" layoutX="435.0" layoutY="77.0" prefHeight="25.0" prefWidth="66.0" text="[p]%">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="stepsExecuted" layoutX="15.0" layoutY="202.0" text="Steps executed: [f] / [t].">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="filesDownloaded" layoutX="14.0" layoutY="227.0" text="Ready to go: [f] / [t].">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="100.0" prefHeight="55.0" prefWidth="539.0" text="Download process details will be shown below. Once the download finishes, this window will close automatically." wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="inProgress" layoutX="16.0" layoutY="177.0" text="In progress: [status]">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

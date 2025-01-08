@@ -1,0 +1,172 @@
+.label{
+    -fx-text-fill: white;
+}
+.hyperlink{
+    -fx-text-fill: cyan;
+}
+#corePane{
+    -fx-background-color: #151515;
+}
+#CloseButton, #CloseButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+#MinimizeButton, #MinimizeButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+#fullscreenButton, #fullscreenButton:hover{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+#playButton{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#playButton:hover{
+    -fx-border-color: #5b635d;
+    -fx-border-width: 2px;
+}
+#nextSong{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#nextSong:hover{
+    -fx-border-color: #5b635d;
+    -fx-border-width: 2px;
+}
+#previousSong{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#previousSong:hover{
+    -fx-border-color: #5b635d;
+    -fx-border-width: 2px;
+}
+.button{
+    -fx-background-color: #151515;
+    -fx-text-fill: white;
+    -fx-background-radius: 0px;
+    -fx-border-color: #404541;
+    -fx-border-width: 2px;
+}
+.button:hover{
+    -fx-background-color: #5b635d;
+    -fx-border-color: transparent;
+}
+.button:pressed{
+    -fx-background-color: #404541;
+}
+#PlayerMainLabel{
+    -fx-text-fill: #00ddff;
+}
+#playerHoverImage{
+    -fx-fill: #151515;
+    -fx-stroke: transparent;
+}
+#unfocusedScreen{
+    -fx-fill: #151515;
+    -fx-stroke: transparent;
+}
+#timerBorder{
+    -fx-fill: transparent;
+    -fx-stroke: gray;
+}
+#titleBar{
+    -fx-fill: #808080;
+}
+
+.menu-bar {
+    -fx-background-color: #404541;
+}
+.menu-bar .menu-button:showing{
+    -fx-background-color: #404541;
+}
+.menu-bar:hover, .menu-bar .menu-button:hover, .menu-bar:focused .label{
+    -fx-background-color: #5b635d;
+}
+.menu-item{
+    -fx-background-color: #151515;
+    -fx-text-fill: white;
+}
+.menu-item:focused{
+    -fx-background-color: #5b635d;
+}
+
+.list-view{
+    -fx-background-color: transparent;
+}
+.scroll-bar{
+    -fx-background-color: transparent;
+}
+.scroll-bar .thumb{
+    -fx-background-color: transparent;
+}
+.scroll-bar > .increment-button{
+    -fx-background-color: transparent;
+}
+.scroll-bar > .decrement-button{
+    -fx-background-color: transparent;
+}
+.list-cell:filled{
+    -fx-text-fill: lime;
+}
+.list-cell:even, .list-cell:odd{
+    -fx-background-color: #151515;
+}
+
+.list-cell:selected, .list-cell:focused{
+    -fx-background-color: #6e8073;
+    -fx-text-fill: #00ff4e;
+}
+#timeSlider .track {
+    -fx-pref-width: 634;
+    -fx-pref-height: 16;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+#volumeSlider .track{
+    -fx-background-color: linear-gradient(to right, #228643, #00ff3f);
+    -fx-cursor: hand;
+}
+#volumeSlider .thumb{
+    -fx-background-color: gray;
+    -fx-cursor: hand;
+}
+#volumeSlider .thumb:hover{
+    -fx-background-color: darkgray;
+}
+#timeSlider .thumb{
+    -fx-background-color: #a29b9b;
+    -fx-cursor: hand;
+}
+.progress-bar{
+    -fx-border-radius: 4px;
+    -fx-cursor: hand;
+}
+.progress-bar .bar{
+    -fx-background-color: linear-gradient(to right, #1dcc52, #1dcc52);
+}
+.progress-bar .track{
+    -fx-background-color: transparent;
+}
+.text-field{
+    -fx-background-color: #2a2a2a;
+    -fx-text-fill: white;
+}
+#quadCurve{
+    -fx-fill: #1dcc52;
+    -fx-stroke: transparent;
+}
+#CloseButton{
+    -fx-background-color: transparent;
+}
+#MinimizeButton{
+  -fx-background-color: transparent;
+}
+#playerHoverImage{
+    -fx-cursor: hand;
+}

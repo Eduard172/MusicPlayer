@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="519.0" prefWidth="866.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.ProblemFixer">
+   <children>
+      <Rectangle fx:id="taskBar" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="30.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="866.0" />
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="830.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" fx:id="xImage" />
+      <ImageView fx:id="minimizeImage" fitHeight="26.0" fitWidth="32.0" layoutX="790.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="826.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" fx:id="xButton" />
+      <Button fx:id="minimizeButton" layoutX="786.0" layoutY="1.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="40.0" />
+      <Label fx:id="taskbarTitle" layoutX="12.0" layoutY="6.0" text="Window Title" />
+      <Label layoutX="11.0" layoutY="38.0" text="There was a problem when trying to process this action" textFill="#686767">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="problem_description" alignment="TOP_LEFT" layoutX="11.0" layoutY="70.0" prefHeight="376.0" prefWidth="851.0" text="[PROBLEM_DESCRIPTION]" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="487.0" text="To try a fix for this problem, click on the &quot;Try the recommended fix&quot; button">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="fix_button" layoutX="624.0" layoutY="483.0" mnemonicParsing="false" text="Try the recommended fix" />
+      <Button fx:id="cancel_button" layoutX="780.0" layoutY="483.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Cancel" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="454.0" layoutY="488.0" prefHeight="17.0" prefWidth="164.0" />
+      <Label fx:id="solutionLabel" layoutX="11.0" layoutY="459.0" text="Quick Solution: SOLUTION">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
