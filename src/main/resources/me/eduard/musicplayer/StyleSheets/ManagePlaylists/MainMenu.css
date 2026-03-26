@@ -1,0 +1,54 @@
+#corePane{
+    -fx-background-color: #171717;
+}
+#xButton, #xButton:hover{
+    -fx-background-color: transparent;
+}
+#minimizeButton, #minimizeButton:hover{
+    -fx-background-color: transparent;
+}
+#taskBar{
+    -fx-fill: #808080;
+}
+.label{
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #404541;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #5b635d;
+}
+.button:pressed{
+    -fx-background-color: #404541;
+}
+.menu-bar{
+    -fx-background-color: #404541;
+}
+.menu-bar .menu-button:showing{
+    -fx-background-color: #404541;
+}
+.menu-bar:hover, .menu-bar:focused, .menu-bar .menu-button:hover, .menu-bar .menu-button:focused{
+    -fx-background-color: #5b635d;
+}
+
+.menu-item{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.menu-item:focused{
+    -fx-background-color: #5b635d;
+}
+.list-cell:filled{
+    -fx-text-fill: #1dcc52;
+}
+.list-cell:even, .list-cell:odd{
+    -fx-background-color: #56635a;
+}
+.list-cell:selected, .list-cell:focused{
+    -fx-background-color: #6e8073;
+    -fx-text-fill: #00ff4e;
+}
+
+

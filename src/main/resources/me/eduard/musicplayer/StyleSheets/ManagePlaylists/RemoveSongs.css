@@ -1,0 +1,96 @@
+#corePane{
+    -fx-background-color: #171717;
+}
+#xButton, #xButton:hover{
+    -fx-background-color: transparent;
+}
+#minimizeButton, #minimizeButton:hover{
+    -fx-background-color: transparent;
+}
+#taskBar{
+    -fx-fill: #808080;
+}
+.label{
+    -fx-text-fill: white;
+}
+.button{
+    -fx-background-color: #404541;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color: #5b635d;
+}
+.button:pressed{
+    -fx-background-color: #404541;
+}
+
+.list-view{
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: gray;
+}
+.scroll-bar{
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical {
+    -fx-pref-width: 0px;
+    -fx-pref-height: 0px;
+}
+.scroll-bar:horizontal {
+    -fx-pref-height: 15px;
+    -fx-pref-width: 0px;
+}
+.scroll-bar:vertical > .increment-button{
+    -fx-opacity: 0;
+}
+.scroll-bar:vertical > .decrement-button{
+    -fx-opacity: 0;
+}
+.scroll-bar .thumb{
+    -fx-background-color: #404040;
+    -fx-cursor: hand;
+}
+.scroll-bar .thumb:hover{
+    -fx-background-color: #4f4f4f;
+}
+.scroll-bar > .increment-button{
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-color: #292929;
+}
+.scroll-bar > .increment-button:hover{
+    -fx-background-color: #424242;
+}
+.scroll-bar > .decrement-button{
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-color: #292929;
+}
+.scroll-bar > .decrement-button:hover{
+    -fx-background-color: #424242;
+}
+.list-cell:filled{
+    -fx-text-fill: lime;
+}
+.list-cell:even, .list-cell:odd{
+    -fx-background-color: #151515;
+}
+.list-cell:filled:hover {
+    -fx-background-color: gray;
+    -fx-text-fill: cyan;
+}
+.list-cell:filled:pressed{
+    -fx-background-color: #5c5c5c;
+}
+
+.check-box{
+    -fx-text-fill: white;
+}
+
+.check-box:selected .box{
+    -fx-background-color: #00FF4EFF;
+}
+
+.check-box .box{
+    -fx-background-color: #6e8073;
+}

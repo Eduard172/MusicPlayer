@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="527.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.ErrorHandler">
+   <children>
+      <Label layoutX="14.0" layoutY="39.0" text="Something did not quite work... :(">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="73.0" text="A problem has occurred while trying to make this action. Important error logs are shown below. Please report to the developer.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLog" alignment="TOP_LEFT" layoutX="14.0" layoutY="99.0" prefHeight="363.0" prefWidth="861.0" text="[Error Log Placeholder]" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" layoutX="786.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="80.0" text="OK" />
+      <Button fx:id="copyDescription" layoutX="616.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="164.0" text="Copy Problem Description" />
+      <Button fx:id="copyFullTrace" layoutX="465.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="144.0" text="Copy Full Stack Trace" />
+      <Button fx:id="copyImportantTrace" layoutX="294.0" layoutY="488.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="164.0" text="Copy Important Stack Trace" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="361.0" layoutY="46.0" prefHeight="17.0" prefWidth="510.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="465.0" text="Problem still persisting? Try copying the Full Stack Trace and contact the App developer with the given information" textFill="#801212" />
+   </children>
+</AnchorPane>

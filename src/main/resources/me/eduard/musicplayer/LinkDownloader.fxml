@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="556.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.LinkDownloader">
+   <TextArea fx:id="linkArea" layoutX="10.0" layoutY="109.0" prefHeight="347.0" prefWidth="868.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </TextArea>
+   <Label fx:id="titleLabel" layoutX="10.0" layoutY="40.0" text="Input all youtube links to download the songs. Separate each link by &quot;,&quot;">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <Button fx:id="createButton" layoutX="770.0" layoutY="521.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="108.0" text="Create Playlist" />
+   <Button fx:id="cancelButton" layoutX="653.0" layoutY="521.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="108.0" text="Cancel" />
+   <Label fx:id="playListNameLabel" layoutX="14.0" layoutY="75.0" text="Playlist Name">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+   <TextField fx:id="playlistName" layoutX="124.0" layoutY="75.0" prefHeight="25.0" prefWidth="752.0" />
+   <Label fx:id="statusLabel" alignment="CENTER" layoutX="14.0" layoutY="492.0" prefHeight="25.0" prefWidth="868.0" textFill="#0073ff">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <MenuBar layoutX="531.0" layoutY="521.0">
+      <Menu mnemonicParsing="false" text="Video Quality...">
+         <MenuItem fx:id="quality5" mnemonicParsing="false" text="1080p - High" />
+         <MenuItem fx:id="quality4" mnemonicParsing="false" text="720p - Above-Medium" />
+         <MenuItem fx:id="quality3" mnemonicParsing="false" text="480p - Medium" />
+         <MenuItem fx:id="quality2" mnemonicParsing="false" text="360p - Low-Medium" />
+         <MenuItem fx:id="quality1" mnemonicParsing="false" text="240p - Low" />
+         <MenuItem fx:id="quality0" mnemonicParsing="false" text="144p - Lowest" />
+      </Menu>
+   </MenuBar>
+   <Label fx:id="qualityLabel" alignment="CENTER" layoutX="14.0" layoutY="466.0" prefHeight="26.0" prefWidth="868.0" text="Getting default video quality">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+   <MenuBar layoutX="409.0" layoutY="521.0">
+      <menus>
+         <Menu mnemonicParsing="false" text="Listening Mode">
+            <items>
+               <MenuItem fx:id="localDeviceMode" mnemonicParsing="false" text="Local Desktop Device" />
+               <MenuItem fx:id="externalDeviceMode" mnemonicParsing="false" text="External Device" />
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+   <CheckBox fx:id="audioOnly" layoutX="10.0" layoutY="524.0" mnemonicParsing="false" text="Prefer audio only">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </CheckBox>
+</AnchorPane>

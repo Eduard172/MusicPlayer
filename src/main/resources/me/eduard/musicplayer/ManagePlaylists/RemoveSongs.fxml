@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="492.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.ManagePlaylist.RemoveSongs">
+   <children>
+      <ListView fx:id="listView" layoutX="11.0" layoutY="79.0" prefHeight="334.0" prefWidth="787.0" />
+      <Label fx:id="headerLabel" alignment="TOP_LEFT" layoutX="11.0" layoutY="43.0" text="Remove songs from playlist. (Remaining : N)" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="proceedButton" layoutX="697.0" layoutY="460.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Update Playlist" />
+      <Button fx:id="cancelButton" layoutX="477.0" layoutY="460.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" text="Cancel" />
+      <Button fx:id="removeButton" layoutX="578.0" layoutY="460.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" text="Remove from list" />
+      <Label fx:id="statusLabel" layoutX="16.0" layoutY="411.0" prefHeight="25.0" prefWidth="781.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="plannedToRemoveLabel" layoutX="14.0" layoutY="436.0" prefHeight="25.0" prefWidth="781.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="instantRemove" layoutX="647.0" layoutY="48.0" mnemonicParsing="false" text="Instant remove on select" />
+   </children>
+</AnchorPane>

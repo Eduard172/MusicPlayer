@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="249.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Library.MessageDialog">
+   <children>
+      <Label fx:id="titleLabel" layoutX="14.0" layoutY="28.0" text="Title">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="11.0" layoutY="64.0" prefHeight="150.0" prefWidth="524.0" text="Label" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="456.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Button" />
+   </children>
+</AnchorPane>

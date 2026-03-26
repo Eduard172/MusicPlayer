@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" focusTraversable="true" prefHeight="758.0" prefWidth="1242.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.Player.Player">
+   <Label fx:id="dummyLabel" />
+   <Label fx:id="PlayerMainLabel" layoutX="15.0" layoutY="40.0" text="Player" textFill="#868686">
+      <font>
+         <Font size="20.0" />
+      </font>
+      <tooltip>
+         <Tooltip text="Coded by Edward76" />
+      </tooltip>
+   </Label>
+   <Rectangle fx:id="timerBorder" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="17.0" layoutX="18.0" layoutY="548.0" stroke="BLACK" strokeType="INSIDE" width="854.0" />
+   <ListView fx:id="listView" layoutX="879.0" layoutY="126.0" prefHeight="609.0" prefWidth="350.0" />
+   <ImageView fx:id="previousSong2" fitHeight="25.0" fitWidth="104.0" layoutX="219.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="nextSong2" fitHeight="25.0" fitWidth="104.0" layoutX="554.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true" />
+   <ImageView fx:id="playButton2" fitHeight="25.0" fitWidth="216.0" layoutX="332.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="previousSong" layoutX="219.0" layoutY="680.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" />
+   <Button fx:id="nextSong" layoutX="554.0" layoutY="680.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" />
+   <Button fx:id="playButton" layoutX="332.0" layoutY="680.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="216.0" />
+   <Label fx:id="durationLabel" alignment="CENTER" layoutX="359.0" layoutY="629.0" prefHeight="28.0" prefWidth="161.0" text="00:00 | 00:00">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+   <ProgressBar fx:id="progressBar" layoutX="17.0" layoutY="548.0" prefHeight="17.0" prefWidth="854.0" progress="0.0" />
+   <Slider fx:id="timeSlider" layoutX="7.0" layoutY="549.0" prefHeight="14.0" prefWidth="865.0" />
+   <Slider fx:id="volumeSlider" layoutX="323.0" layoutY="49.0" prefHeight="14.0" prefWidth="243.0" value="100.0" />
+   <Label layoutX="271.0" layoutY="46.0" text="Volume">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="volumeLabel" alignment="CENTER" layoutX="573.0" layoutY="45.0" prefHeight="20.0" prefWidth="96.0" text="0%">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <MenuBar fx:id="optionsBar" layoutX="178.0" layoutY="43.0" prefHeight="25.0" prefWidth="83.0" visible="false">
+      <Menu mnemonicParsing="false" text="Options...">
+         <MenuItem fx:id="settingsPage" mnemonicParsing="false" text="Settings [ ALT + S ]" />
+         <MenuItem fx:id="createPlayList" mnemonicParsing="false" text="Create Playlist... [ ALT + N ]" />
+         <MenuItem fx:id="managePlaylists" mnemonicParsing="false" text="Manage Playlists... [ALT + M ]" />
+         <MenuItem fx:id="manageBackups" mnemonicParsing="false" text="Manage Backups... [ ALT + B ]" />
+         <MenuItem fx:id="openDirectory" mnemonicParsing="false" text="Open App Directory... [ ALT + E ]" />
+         <MenuItem fx:id="keybinds" mnemonicParsing="false" text="Keybinds... [ ALT + K ]" />
+         <MenuItem fx:id="quitAppItem" mnemonicParsing="false" text="Quit App [ ALT + F4 ]" />
+         <MenuItem fx:id="uninstall" mnemonicParsing="false" text="Uninstall..." />
+      </Menu>
+   </MenuBar>
+   <Button fx:id="choosePlaylist" layoutX="970.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="259.0" text="Switch playlist. ([None])" />
+   <Button fx:id="refreshButton" layoutX="879.0" layoutY="70.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Refresh" />
+   <Button fx:id="closeAllActiveWindows" layoutX="675.0" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="161.0" text="Close all windows (0)" />
+   <Label fx:id="statusLabel" alignment="CENTER" layoutX="3.0" layoutY="721.0" prefWidth="876.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Button fx:id="optionsButton" layoutX="144.0" layoutY="43.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Options Menu..." />
+   <Label fx:id="devLabel" layoutX="18.0" layoutY="621.0" text="X: [x], Y: [y]">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="devLabel2" layoutX="7.0" layoutY="710.0" text="This build is under development and it still may have bugs." />
+   <Label fx:id="memoryCleanup" alignment="TOP_RIGHT" layoutX="879.0" layoutY="736.0" prefHeight="17.0" prefWidth="350.0" text="Automatic memory cleanup in 0 seconds..." />
+   <TextField fx:id="searchSong" layoutX="879.0" layoutY="99.0" prefHeight="25.0" prefWidth="350.0" promptText="Search for a song..." />
+   <ImageView fx:id="thumbnail" fitHeight="460.0" fitWidth="860.0" layoutX="15.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   <MediaView fx:id="mediaView" fitHeight="460.0" fitWidth="860.0" layoutX="15.0" layoutY="80.0" />
+   <Label fx:id="noPlaylistsLabel" layoutX="282.0" layoutY="265.0" text="You do not currently have any available playlist." visible="false">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </Label>
+   <Hyperlink fx:id="noPlaylistsLink" layoutX="358.0" layoutY="292.0" text="Click here to start creating one." visible="false" />
+   <Rectangle fx:id="fullScreenBackground" arcHeight="5.0" arcWidth="5.0" height="728.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="1242.0" />
+   <Label fx:id="avSyncIndicator" layoutX="4.0" layoutY="736.0" text="A/V sync delay: 0ms" />
+   <Rectangle fx:id="unfocusedScreen" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="1178.0" layoutY="36.0" opacity="0.0" stroke="WHITE" strokeType="INSIDE" width="48.0" />
+</AnchorPane>

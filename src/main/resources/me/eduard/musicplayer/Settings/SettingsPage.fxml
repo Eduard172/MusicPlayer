@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="corePane" prefHeight="554.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.eduard.musicplayer.Components.SettingsPage">
+   <children>
+      <Label layoutX="15.0" layoutY="38.0" text="General Settings">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancelButton" layoutX="855.0" layoutY="515.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" text="Cancel" />
+      <Button fx:id="saveButton" layoutX="768.0" layoutY="515.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" text="Save" />
+      <CheckBox fx:id="allowAnimations" layoutX="15.0" layoutY="117.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="140.0" text="Allow animations">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will enable the application animations, such as title moving from right to left, timer slider color opacity fluctuating, and notification sliding when a new song is being playied." />
+         </tooltip>
+      </CheckBox>
+      <CheckBox fx:id="allowSlidingNotification" layoutX="15.0" layoutY="143.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="194.0" text="Allow Sliding Notifications">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will enable the sliding notification from the bottom of the screen to pop up whenever a new application event is triggered such as new song being playied, or some other behaviour" />
+         </tooltip>
+      </CheckBox>
+      <CheckBox fx:id="autoStart" layoutX="15.0" layoutY="169.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="322.0" text="Automatic Song Play when starting application">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will enable the automatic play of the first available song in the current / fallback playlist." />
+         </tooltip>
+      </CheckBox>
+      <CheckBox fx:id="verboseStatus" layoutX="15.0" layoutY="197.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="125.0" text="Verbose Status">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option shows different application events such as automatic memory cleanup timer" />
+         </tooltip>
+      </CheckBox>
+      <ListView fx:id="playerEndBehaviour" layoutX="727.0" layoutY="148.0" prefHeight="53.0" prefWidth="200.0" />
+      <Label layoutX="727.0" layoutY="124.0" text="Playback Mode">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Sets the behaviour when the song reaches the end." />
+         </tooltip>
+      </Label>
+      <ListView fx:id="soundBehaviour" layoutX="727.0" layoutY="267.0" prefHeight="53.0" prefWidth="200.0" />
+      <Label layoutX="728.0" layoutY="241.0" text="Sound">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Sets up the sound behaviour to either full volume or adjusted if your device cannot play the entire sound correctly." />
+         </tooltip>
+      </Label>
+      <Label fx:id="playerEndSelectedBehaviour" layoutX="727.0" layoutY="201.0" text="Currently Enabled: None">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutY="515.0" prefHeight="25.0" prefWidth="663.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveAndExitButton" layoutX="667.0" layoutY="515.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="91.0" text="Save and Exit" />
+      <CheckBox fx:id="startInFullScreen" layoutX="15.0" layoutY="223.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="143.0" text="Start in FullScreen">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will allow you to start the application directly in FullScreen mode." />
+         </tooltip>
+      </CheckBox>
+      <CheckBox fx:id="hidePlayer" layoutX="15.0" layoutY="249.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="166.0" text="Hide the Player Video">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will only render the audio, while the player won't be visible" />
+         </tooltip>
+      </CheckBox>
+      <Hyperlink fx:id="downloaderUpdates" layoutX="669.0" layoutY="38.0" text="Update downloader, ffmpeg and opus decoder" />
+      <Label alignment="TOP_LEFT" layoutX="15.0" layoutY="78.0" text="There are the settings that the player is currently using. To save them, click on &quot;Save&quot; button or the keyboard combination &quot;CTRL+S&quot;" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="hideTitle" layoutX="15.0" layoutY="275.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="125.0" text="Hide Song Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This option will hide the title of the media which is being playied, replacing it with a placeholder." />
+         </tooltip>
+      </CheckBox>
+   </children>
+</AnchorPane>

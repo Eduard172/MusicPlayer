@@ -1,0 +1,9 @@
+.slider .track {
+    -fx-pref-height: 6;
+    -fx-background-color: #787878;
+    -fx-cursor: hand;
+}
+.slider .thumb{
+    -fx-background-color: #a29b9b;
+    -fx-cursor: hand;
+}
